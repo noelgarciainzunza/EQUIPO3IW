@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html>
-    <head>
+    <head >
         <title>Laravel</title>
 
         <link href='//fonts.googleapis.com/css?family=Lato:100' rel='stylesheet' type='text/css'>
@@ -41,7 +41,7 @@
             }
         </style>
     </head>
-    <body>
+    <body bgcolor="#01DF01">
         <div class="container">
             <div class="content">
                 <div class="title">Laravel 5</div>
