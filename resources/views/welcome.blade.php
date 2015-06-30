@@ -41,7 +41,7 @@
             }
         </style>
     </head>
-    <body bgcolor="#01DF01">
+    <body bgcolor="#11C17D">
         <div class="container">
             <div class="content">
                 <div class="title">Laravel 5</div>
