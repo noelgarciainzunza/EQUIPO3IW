@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+<<<<<<< HEAD
     <head>
     <meta charset="UTF-8">
     <title>CONTROL ESCOLAR</title>
@@ -32,6 +33,17 @@
                 <a href="" class="list-group-item">CONTABILIDAD</a>
             </div>
         </nav>
+=======
+    <head >
+        <title>LARAVEL 5</title>
+
+        <link href='//fonts.googleapis.com/css?family=Lato:100' rel='stylesheet' type='text/css'>
+
+        <style>
+            html, body {
+                height: 100%;
+            }
+>>>>>>> origin/master
 
 
         <div class="container">
@@ -50,6 +62,7 @@
 
 
 
+<<<<<<< HEAD
     <footer>
         <div class="container-fluid color4">
         <div class="row"></div>
@@ -59,4 +72,19 @@
     </div>  
 </footer class="container">
 </body>
+=======
+            .quote {
+                font-size: 24px;
+            }
+        </style>
+    </head>
+    <body bgcolor="#11C17D">
+        <div class="container">
+            <div class="content">
+                <div class="title">Equipo3IW</div>
+                <div class="quote">{{ Inspiring::quote() }}</div>
+            </div>
+        </div>
+    </body>
+>>>>>>> origin/master
 </html>
