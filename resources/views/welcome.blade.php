@@ -1,52 +1,62 @@
 <!DOCTYPE html>
 <html>
-    <head >
-        <title>Laravel</title>
-
-        <link href='//fonts.googleapis.com/css?family=Lato:100' rel='stylesheet' type='text/css'>
-
-        <style>
-            html, body {
-                height: 100%;
-            }
-
-            body {
-                margin: 0;
-                padding: 0;
-                width: 100%;
-                color: green;
-                display: table;
-                font-weight: 100;
-                font-family: 'Lato';
-            }
-
-            .container {
-                text-align: center;
-                display: table-cell;
-                vertical-align: middle;
-            }
-
-            .content {
-                text-align: center;
-                display: inline-block;
-            }
-
-            .title {
-                font-size: 196px;
-                margin-bottom: 40px;
-            }
-
-            .quote {
-                font-size: 24px;
-            }
-        </style>
-    </head>
-    <body bgcolor="#01DF01">
-        <div class="container">
-            <div class="content">
-                <div class="title">Equipo3IW</div>
-                <div class="quote">{{ Inspiring::quote() }}</div>
+    <head>
+    <meta charset="UTF-8">
+    <title>CONTROL ESCOLAR</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/misestilos.css">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+</head>
+<body>
+    <header>
+    <div class="container-fluid">
+        <div class="row"></div>
+            <div class="col-xs-12">
+                <center>
+                <img src="img1.jpg"width='87%'>
+                </center>
             </div>
         </div>
-    </body>
+    </div>
+    <div class="container">
+    <div class="row">
+        <nav class="col-xs-4 color2">
+            <br>
+            <br>
+            <div class="list-group">
+                <a href="" class="list-group-item active">ING. EN SISTEMAS</a>
+                <a href="" class="list-group-item">ING. WEB</a>
+                <a href="" class="list-group-item">REDES</a>
+                <a href="" class="list-group-item">CALCULO</a>
+                <a href="" class="list-group-item">TESEBADA</a>
+                <a href="" class="list-group-item">CONTABILIDAD</a>
+            </div>
+        </nav>
+
+
+        <div class="container">
+    <div class="row">
+        <nav class="col-xs-8">
+            <br>
+            <center>
+            <br>
+            <h1>GRUPOS DISPONIBLES</h1>
+            <h4>
+            <a href="">GRUPO 1</a></h4>
+        </nav>
+            <h3 align="center">MAESTRO:</h3>
+            <h3 align="center">AULA:</h3>
+            </center>
+
+
+
+    <footer>
+        <div class="container-fluid color4">
+        <div class="row"></div>
+            <div class="col-xs-14"style="background: rgba(0,0,1,0.5);"  >
+        <hr>
+        <center><h4><font color="white">COPY&RIGTH &COPY;</font></h4>
+    </div>  
+</footer class="container">
+</body>
 </html>
