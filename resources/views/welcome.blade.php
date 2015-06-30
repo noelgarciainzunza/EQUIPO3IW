@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html>
-<<<<<<< HEAD
     <head>
     <meta charset="UTF-8">
     <title>CONTROL ESCOLAR</title>
@@ -33,36 +32,6 @@
                 <a href="" class="list-group-item">CONTABILIDAD</a>
             </div>
         </nav>
-=======
-    <head >
-        <title>LARAVEL 5</title>
-
-        <link href='//fonts.googleapis.com/css?family=Lato:100' rel='stylesheet' type='text/css'>
-
-        <style>
-            html, body {
-                height: 100%;
-            }
->>>>>>> origin/master
-
-
-        <div class="container">
-    <div class="row">
-        <nav class="col-xs-8">
-            <br>
-            <center>
-            <br>
-            <h1>GRUPOS DISPONIBLES</h1>
-            <h4>
-            <a href="">GRUPO 1</a></h4>
-        </nav>
-            <h3 align="center">MAESTRO:</h3>
-            <h3 align="center">AULA:</h3>
-            </center>
-
-
-
-<<<<<<< HEAD
     <footer>
         <div class="container-fluid color4">
         <div class="row"></div>
@@ -72,19 +41,4 @@
     </div>  
 </footer class="container">
 </body>
-=======
-            .quote {
-                font-size: 24px;
-            }
-        </style>
-    </head>
-    <body bgcolor="#11C17D">
-        <div class="container">
-            <div class="content">
-                <div class="title">Equipo3IW</div>
-                <div class="quote">{{ Inspiring::quote() }}</div>
-            </div>
-        </div>
-    </body>
->>>>>>> origin/master
 </html>
