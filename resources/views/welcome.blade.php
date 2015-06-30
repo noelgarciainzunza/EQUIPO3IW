@@ -32,6 +32,13 @@
                 <a href="" class="list-group-item">CONTABILIDAD</a>
             </div>
         </nav>
+
+
+        <div class="container">
+    <div class="row">
+        <nav class="col-xs-8">
+            <h1 align="center">GRUPOS DISPONIBLES</h1>
+        </nav>    
     <footer>
         <div class="container-fluid color4">
         <div class="row"></div>
