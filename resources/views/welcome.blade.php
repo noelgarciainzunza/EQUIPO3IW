@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head >
-        <title>Laravel</title>
+        <title>LARAVEL 5</title>
 
         <link href='//fonts.googleapis.com/css?family=Lato:100' rel='stylesheet' type='text/css'>
 
@@ -14,7 +14,7 @@
                 margin: 0;
                 padding: 0;
                 width: 100%;
-                color: #B0BEC5;
+                color: green;
                 display: table;
                 font-weight: 100;
                 font-family: 'Lato';
@@ -32,7 +32,7 @@
             }
 
             .title {
-                font-size: 96px;
+                font-size: 196px;
                 margin-bottom: 40px;
             }
 
@@ -44,7 +44,7 @@
     <body bgcolor="#11C17D">
         <div class="container">
             <div class="content">
-                <div class="title">Laravel 5</div>
+                <div class="title">Equipo3IW</div>
                 <div class="quote">{{ Inspiring::quote() }}</div>
             </div>
         </div>
