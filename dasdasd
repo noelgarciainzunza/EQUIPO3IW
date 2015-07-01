@@ -1,0 +1,137 @@
+[33mcommit fb060178325791fa177ba1e03a61c61dcbd9f041[m
+Author: jlzor <jlz_or@hotmail.com>
+Date:   Wed Jul 1 13:40:58 2015 -0600
+
+    archivo de la bd
+
+[33mcommit 3903ffbf8d8980f6b581dbe32e647da2ee73c061[m
+Author: jlzor <jlz_or@hotmail.com>
+Date:   Wed Jul 1 12:59:43 2015 -0600
+
+    JALE LOS GRUPOS DE LA BD
+
+[33mcommit f4d2c1d4d5cb77d7c412666575fc706da08a3f00[m
+Author: jlzor <jlz_or@hotmail.com>
+Date:   Wed Jul 1 00:10:16 2015 -0600
+
+    AGREGE EL MENU DESDE LA BD
+
+[33mcommit 8c856baa7a1e856144e26bbcfb307a27e337b5e8[m
+Author: jlzor <jlz_or@hotmail.com>
+Date:   Tue Jun 30 15:41:31 2015 -0600
+
+    Creacion de las Tablas dentro de Database/migrations
+
+[33mcommit 364acf637b5cd59122300e240cf1b5911cedd706[m
+Author: noelgarciainzunza <noel_garcia.15@hotmail.com>
+Date:   Tue Jun 30 14:45:21 2015 -0600
+
+    AGREGA GRUPOS DISPONIBLES
+
+[33mcommit c510683868c892b9e7216942a32db8409feb23bc[m
+Author: noelgarciainzunza <noel_garcia.15@hotmail.com>
+Date:   Tue Jun 30 14:42:04 2015 -0600
+
+    CORRECCION DE PLANTILLA
+
+[33mcommit 8da1cb6d83d6cef29f8ae0dc5fc87a46d9060ed5[m
+Merge: c7523d9 80db0cc
+Author: noelgarciainzunza <noel_garcia.15@hotmail.com>
+Date:   Tue Jun 30 14:32:09 2015 -0600
+
+    SE AGREGO PLANTILLA
+
+[33mcommit c7523d9b78b22bea2c9bd631af5c20e1b1a44609[m
+Author: noelgarciainzunza <noel_garcia.15@hotmail.com>
+Date:   Tue Jun 30 14:29:48 2015 -0600
+
+    SE AGREGO PLANTILLA
+
+[33mcommit 80db0cc0d1f766ade66b18c4d16e35f63c9f2a94[m
+Merge: e191ffe b55da61
+Author: joel Pérez Cabada <jp_ceii@hotmail.com>
+Date:   Tue Jun 30 14:12:47 2015 -0600
+
+    Merge remote-tracking branch 'origin/master'
+
+[33mcommit e191ffe34e85bbb31f7cfa1090b346e907d55bcd[m
+Author: joel Pérez Cabada <jp_ceii@hotmail.com>
+Date:   Tue Jun 30 14:12:31 2015 -0600
+
+    cambio de color de fondo el otro estaba muy chigame la pupila
+
+[33mcommit b55da6147c7f47ee18c8919b1d9d0966f7ad3164[m
+Author: Jesus Ariel Ramirez Lopez <jarlramires21@gmail.com>
+Date:   Tue Jun 30 15:00:15 2015 -0500
+
+    cambio de titulo
+
+[33mcommit bebbc77696645b70b024a5b26b417573b3ddb5c3[m
+Author: jlzor <jlz_or@hotmail.com>
+Date:   Mon Jun 29 20:55:43 2015 -0600
+
+    Edite Mensaje de Inicio
+
+[33mcommit 59f8f6ddffe288c0f17184115795cf8b500a7b9d[m
+Merge: bd3040c 8047d3e
+Author: unknown <jlzor@hotmail.com>
+Date:   Mon Jun 29 14:56:06 2015 -0600
+
+    Merge remote-tracking branch 'origin/master'
+
+[33mcommit 8047d3e9f68ff510dbabc4a4f15a2ecba5ce97e5[m
+Merge: 807f43d 4512b18
+Author: josueisahu <josueisahu93@gmail.com>
+Date:   Fri Jul 3 14:50:58 2015 -0600
+
+    Merge remote-tracking branch 'origin/master'
+
+[33mcommit 807f43db37834c6641e900004edf7d42e195c80e[m
+Author: josueisahu <josueisahu93@gmail.com>
+Date:   Fri Jul 3 14:48:22 2015 -0600
+
+    Cambio de texto
+
+[33mcommit bd3040ce5e85fe2f698066a41d38849645ff46de[m
+Author: unknown <jlzor@hotmail.com>
+Date:   Mon Jun 29 14:55:41 2015 -0600
+
+    subi archivo de texto
+
+[33mcommit 4512b18ba6b69c6baea032ec8d522b39cd75e709[m
+Merge: 8ce8200 9de3ac1
+Author: joel Pérez Cabada <jp_ceii@hotmail.com>
+Date:   Mon Jun 29 14:42:15 2015 -0600
+
+    Merge remote-tracking branch 'origin/master'
+
+[33mcommit 8ce8200aee7ca4cd886bed2dbda3e1537319a837[m
+Author: joel Pérez Cabada <jp_ceii@hotmail.com>
+Date:   Mon Jun 29 14:40:34 2015 -0600
+
+    cambio de color de fondo
+
+[33mcommit 9de3ac17f7caf46d1d0bb7bce32766eaf4c1d7ab[m
+Merge: e19129c 84f538f
+Author: jrvp1111 <jrvp1111@gmail.com>
+Date:   Mon Jun 29 14:32:58 2015 -0600
+
+    Merge remote-tracking branch 'origin/master'
+
+[33mcommit e19129c62cb43ca010026cbb95111c5ae846bed2[m
+Author: jrvp1111 <jrvp1111@gmail.com>
+Date:   Mon Jun 29 14:30:16 2015 -0600
+
+    archivos ignadoros
+
+[33mcommit 84f538f1bbdbf62cdbb4d118c07435eef009ee95[m
+Author: noelgarciainzunza <noel_garcia.15@hotmail.com>
+Date:   Mon Jun 29 14:17:16 2015 -0600
+
+    AGREGA CARPETA VENDOR
+
+[33mcommit 325012f3c53df0533ff856fec0b9b34a5fd6fd73[m
+Author: noelgarciainzunza <noel_garcia.15@hotmail.com>
+Date:   Mon Jun 29 13:55:09 2015 -0600
+
+    PROYECTO

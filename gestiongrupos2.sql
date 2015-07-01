@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 01-07-2015 a las 21:40:21
+-- Tiempo de generación: 01-07-2015 a las 21:55:31
 -- Versión del servidor: 5.6.24
 -- Versión de PHP: 5.6.8
 
@@ -160,6 +160,26 @@ INSERT INTO `alumnos` (`id`, `nombre`, `carrera`) VALUES
 -- --------------------------------------------------------
 
 --
+-- Estructura de tabla para la tabla `contenedor`
+--
+
+CREATE TABLE IF NOT EXISTS `contenedor` (
+  `id` int(10) unsigned NOT NULL,
+  `nom_maestro` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
+  `nom_aula` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
+  `nom_materia` varchar(255) COLLATE utf8_unicode_ci NOT NULL
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+
+--
+-- Volcado de datos para la tabla `contenedor`
+--
+
+INSERT INTO `contenedor` (`id`, `nom_maestro`, `nom_aula`, `nom_materia`) VALUES
+(1, 'Gerardo Clemente', 'EASS', 'ING. WEB');
+
+-- --------------------------------------------------------
+
+--
 -- Estructura de tabla para la tabla `grupos`
 --
 
@@ -228,6 +248,59 @@ INSERT INTO `materias` (`id`, `nombre`) VALUES
 (5, 'INTELIGENCIA ARTIFICIAL'),
 (6, 'TALLER DE BD');
 
+-- --------------------------------------------------------
+
+--
+-- Estructura de tabla para la tabla `migrations`
+--
+
+CREATE TABLE IF NOT EXISTS `migrations` (
+  `migration` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
+  `batch` int(11) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+
+--
+-- Volcado de datos para la tabla `migrations`
+--
+
+INSERT INTO `migrations` (`migration`, `batch`) VALUES
+('2014_10_12_000000_create_users_table', 1),
+('2014_10_12_100000_create_password_resets_table', 1),
+('2015_06_30_205822_create_maestros_table', 1),
+('2015_06_30_211003_create_materias_table', 2),
+('2015_06_30_211523_create_alumnos_table', 2),
+('2015_06_30_212124_create_grupos_table', 3),
+('2015_06_30_212801_create_alumgrupos_table', 3),
+('2015_07_01_053625_create_contenedor_table', 4);
+
+-- --------------------------------------------------------
+
+--
+-- Estructura de tabla para la tabla `password_resets`
+--
+
+CREATE TABLE IF NOT EXISTS `password_resets` (
+  `email` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
+  `token` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
+  `created_at` timestamp NOT NULL DEFAULT '0000-00-00 00:00:00'
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+
+-- --------------------------------------------------------
+
+--
+-- Estructura de tabla para la tabla `users`
+--
+
+CREATE TABLE IF NOT EXISTS `users` (
+  `id` int(10) unsigned NOT NULL,
+  `name` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
+  `email` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
+  `password` varchar(60) COLLATE utf8_unicode_ci NOT NULL,
+  `remember_token` varchar(100) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `created_at` timestamp NOT NULL DEFAULT '0000-00-00 00:00:00',
+  `updated_at` timestamp NOT NULL DEFAULT '0000-00-00 00:00:00'
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+
 --
 -- Índices para tablas volcadas
 --
@@ -242,6 +315,12 @@ ALTER TABLE `alugrupos`
 -- Indices de la tabla `alumnos`
 --
 ALTER TABLE `alumnos`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Indices de la tabla `contenedor`
+--
+ALTER TABLE `contenedor`
   ADD PRIMARY KEY (`id`);
 
 --
@@ -263,6 +342,18 @@ ALTER TABLE `materias`
   ADD PRIMARY KEY (`id`);
 
 --
+-- Indices de la tabla `password_resets`
+--
+ALTER TABLE `password_resets`
+  ADD KEY `password_resets_email_index` (`email`), ADD KEY `password_resets_token_index` (`token`);
+
+--
+-- Indices de la tabla `users`
+--
+ALTER TABLE `users`
+  ADD PRIMARY KEY (`id`), ADD UNIQUE KEY `users_email_unique` (`email`);
+
+--
 -- AUTO_INCREMENT de las tablas volcadas
 --
 
@@ -276,6 +367,11 @@ ALTER TABLE `alugrupos`
 --
 ALTER TABLE `alumnos`
   MODIFY `id` int(10) unsigned NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=12;
+--
+-- AUTO_INCREMENT de la tabla `contenedor`
+--
+ALTER TABLE `contenedor`
+  MODIFY `id` int(10) unsigned NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=2;
 --
 -- AUTO_INCREMENT de la tabla `grupos`
 --
@@ -291,6 +387,11 @@ ALTER TABLE `maestros`
 --
 ALTER TABLE `materias`
   MODIFY `id` int(10) unsigned NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=7;
+--
+-- AUTO_INCREMENT de la tabla `users`
+--
+ALTER TABLE `users`
+  MODIFY `id` int(10) unsigned NOT NULL AUTO_INCREMENT;
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
