@@ -15,3 +15,4 @@
 Route::get('/', 'materiasController@Index');
 
 Route::get('grupos', 'gruposController@Index');
+Route::get('index', 'IndexController@Index');
