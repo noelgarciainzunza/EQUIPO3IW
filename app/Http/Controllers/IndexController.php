@@ -20,6 +20,8 @@ class IndexController extends Controller
         
 
          return view('index');
+
+     }
    /* public function Index()
     {
          $result = \DB::table('materias')->get();
