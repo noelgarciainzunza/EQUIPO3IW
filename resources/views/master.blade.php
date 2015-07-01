@@ -2,7 +2,7 @@
 <html>
     <head>
     <meta charset="UTF-8">
-    <title>CONTROL ESCOLAR</title>
+    <title>@yield('title', 'CONTROL ESCOLAR')</title>
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/misestilos.css">
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
@@ -23,22 +23,23 @@
         <nav class="col-xs-4 color2">
             <br>
             <br>
-            <div class="list-group">
-                <a href="" class="list-group-item active">ING. EN SISTEMAS</a>
-                <a href="" class="list-group-item">ING. WEB</a>
-                <a href="" class="list-group-item">REDES</a>
-                <a href="" class="list-group-item">CALCULO</a>
-                <a href="" class="list-group-item">TESEBADA</a>
-                <a href="" class="list-group-item">CONTABILIDAD</a>
-            </div>
+         <div class="list-group">
+            @foreach ($result as $row)
+         <a align="center" href="grupos/{{ $row->id }}" class="list-group-item"><b>{{ $row->nombre }}</b></a>
+            @endforeach
+            </div>  
         </nav>
 
 
         <div class="container">
     <div class="row">
         <nav class="col-xs-8">
-            <h1 align="center">GRUPOS DISPONIBLES</h1>
-        </nav>    
+            <h1 align="center"><b style="text-decoration: underline">GRUPOS DISPONIBLES</b></h1>
+       
+           @yield('content') 
+        </nav>   
+        </div> 
+    </div>
     <footer>
         <div class="container-fluid color4">
         <div class="row"></div>

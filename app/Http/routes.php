@@ -11,6 +11,7 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+
+Route::get('/', 'materiasController@Index');
+
+Route::get('grupos', 'gruposController@Index');
