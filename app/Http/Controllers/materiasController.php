@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 
 use App\Http\Requests;
+use App\Materias;
 use App\Http\Controllers\Controller;
 
 class materiasController extends Controller
@@ -15,6 +16,12 @@ class materiasController extends Controller
      * @return Response
      */
     public function Index()
+    {
+         $materias = Materias::all();
+
+         return view('master', ['materias' => $materias]);
+    }
+   /* public function Index()
     {
          $result = \DB::table('materias')->get();
 

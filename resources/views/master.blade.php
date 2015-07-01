@@ -23,11 +23,16 @@
         <nav class="col-xs-4 color2">
             <br>
             <br>
-         <div class="list-group">
-            @foreach ($result as $row)
-         <a align="center" href="grupos/{{ $row->id }}" class="list-group-item"><b>{{ $row->nombre }}</b></a>
+        @section('materias')
+                     <div class="list-group">
+
+            @foreach ($materias as $materia)
+         <a align="center" href="grupos/{{ $materia->id }}" class="list-group-item"><b>{{ $materia->nombre }}</b></a>
             @endforeach
-            </div>  
+            </div>
+        @show
+         
+
         </nav>
 
 

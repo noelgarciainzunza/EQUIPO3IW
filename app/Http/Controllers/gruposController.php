@@ -5,6 +5,11 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 
 use App\Http\Requests;
+use App\Grupos;
+use App\Materias;
+use App\Maestros;
+use App\Alumnos;
+use App\Alugrupos;
 use App\Http\Controllers\Controller;
 
 class gruposController extends Controller
@@ -15,6 +20,15 @@ class gruposController extends Controller
      * @return Response
      */
     public function Index()
+    {
+        $grupos = Grupos::all();
+        $materias = Materias::all();
+        $maestros = Maestros::all();
+        $alumnos = Alumnos::all();
+        $alugrupos = Alugrupos::all();                     
+        return view('mostrarGrupos', ['grupos' => $grupos], ['materias' => $materias], ['maestros' => $maestros], ['alumnos' => $alumnos], ['Alugrupos' => $alugrupos]);
+    }
+    /*public function Index()
     {
         $result3 = \DB::table('contenedor')->get();
         $result = \DB::table('materias')->get();

@@ -4,11 +4,15 @@
 Grupos por Materia
 @endsection
 
-@section('content')
+@section('materias')
+   @parent
 
+@endsection
+@section('content')
+@foreach ($grupos as $grupo)
 <table align="center">
 	<tr>
-		<td><a href=""><h2 align="center">Grupo</h2></a></td>
+		<td><a href=""><h2 align="center">Grupo{{$grupo->id}}</h2></a></td>
 	</tr>
 	<tr>
 		<td><b>Maestro:</td>
@@ -20,4 +24,5 @@ Grupos por Materia
 		<td><b>Materia:</b></td>
 	</tr>
 	</table>
+	@endforeach
 @endsection
