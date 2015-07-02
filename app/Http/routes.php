@@ -15,9 +15,8 @@ use App\Grupos;
 use App\Alugrupos;
 Route::get('/', 'materiasController@Index');
 
-Route::get('groups', 'gruposController@Index');
-Route::get('index', 'IndexController@Index');
-
+/*Route::get('groups', 'gruposController@Index');
+*/
 /*Route::get('grupos/{id}', ['as'=> 'grupos', 'uses' => 'materiasController@allmaterias']);
 */
 Route::get('grupos/{id}', ['as' => 'gruposs', function($id){
@@ -29,7 +28,7 @@ Route::get('grupos/{id}', ['as' => 'gruposs', function($id){
         ->join('maestros','id_maestro','=','maestros.id')
         ->join('materias', 'id_materia', '=','materias.id')
         ->get();
-        return View::make('mostrarGrupos')->with('grupos',$grupos)->with('materias',$materias);
+        return view('mostrarGrupos')->with('grupos',$grupos)->with('materias',$materias);
 }]);
 
 

@@ -26,11 +26,11 @@
         
                      <div class="list-group">
 
-            @foreach ($materias as $materia)
-         <a align="center" href="{{route('gruposs',[$materia->id])}}" class="list-group-item"><b>{{ $materia->nombre }}</b></a>
-            @endforeach
-            </div>
-        
+                @foreach ($materias as $materia)
+             <a align="center" href="{{route('gruposs',[$materia->id])}}" class="list-group-item"><b>{{ $materia->nombre }}</b></a>
+                @endforeach
+                </div>
+            
 
 
         </nav>
