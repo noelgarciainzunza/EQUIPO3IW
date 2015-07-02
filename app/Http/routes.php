@@ -49,7 +49,7 @@ Route::get('generarPdf/{id}/{maestro}/{aula}/', ['as' => 'pdf', function(){
 		}
 		$pdf = App::make('dompdf.wrapper');
 
-			$pdf->loadHTML('<center><h1>INSTITUTO TECNOLOGICO DE CULIACAN</h1></center>'.
+			$pdf->loadHTML('<body style="background-image:broncos.png"><center><h1>INSTITUTO TECNOLOGICO DE CULIACAN</h1></center>'.
 				'<br>'.
 				'<center><h1>Gestor de Grupos por Materias</h1></center>'.
 				'<center><h4>No. Alumnos: '.$noalumnos.'</h4></center>'.
@@ -64,7 +64,7 @@ Route::get('generarPdf/{id}/{maestro}/{aula}/', ['as' => 'pdf', function(){
 				'<center><b>'.$alumnos[5]->id_alumno.' -'.$alumnos[5]->alumno.'<b></center>'.
 				'<center><b>'.$alumnos[6]->id_alumno.' -'.$alumnos[6]->alumno.'<b></center>'.
 				'<center><b>'.$alumnos[7]->id_alumno.' -'.$alumnos[7]->alumno.'<b></center>'.
-				'<center><b>'.$alumnos[8]->id_alumno.' -'.$alumnos[8]->alumno.'<b></center>');
+				'<center><b>'.$alumnos[8]->id_alumno.' -'.$alumnos[8]->alumno.'<b></center></body>');
 	
 
 		return $pdf->stream();
