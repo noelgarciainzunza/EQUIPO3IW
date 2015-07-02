@@ -6,6 +6,8 @@ use Illuminate\Http\Request;
 
 use App\Http\Requests;
 use App\Materias;
+use App\Maestros;
+use App\Grupos;
 use App\Http\Controllers\Controller;
 
 class materiasController extends Controller
@@ -17,9 +19,10 @@ class materiasController extends Controller
      */
     public function Index()
     {
-         $materias = Materias::all();
 
-         return view('master', ['materias' => $materias]);
+         return view('master')->with( ['materias' => Materias::all(),
+            'grupos' => Grupos::all()]);
+
     }
    /* public function Index()
     {
@@ -33,6 +36,16 @@ class materiasController extends Controller
      *
      * @return Response
      */
+
+    public function allmaterias($id){
+
+    
+    return view('mostrarGrupos')->with([
+            'materias' => Materias::all(),
+            'grupos' => Grupos::where('id_materia', '=', $id)->get()
+            ]);
+    }
+
     public function create()
     {
         //

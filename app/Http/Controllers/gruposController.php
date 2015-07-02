@@ -19,6 +19,17 @@ class gruposController extends Controller
      *
      * @return Response
      */
+    /*public function Index(){
+       
+       $grupos = Grupos::with('maestross')
+          ->where('id', '=','id_maestro')         
+          ->get(array('id as grupoId', 'aula', 'maestro.nombre'))
+          ->toArray();
+
+          return view('mostrarGrupos', compact('grupos'));
+    }
+*/
+  
     public function Index()
     {
         $grupos = Grupos::all();
@@ -26,7 +37,7 @@ class gruposController extends Controller
         $maestros = Maestros::all();
         $alumnos = Alumnos::all();
         $alugrupos = Alugrupos::all();                     
-        return view('mostrarGrupos', ['grupos' => $grupos], ['materias' => $materias], ['maestros' => $maestros], ['alumnos' => $alumnos], ['Alugrupos' => $alugrupos]);
+        return view('mostrarGrupos', ['grupos' => $grupos], ['materias' => $mateerias], ['maestros' => $maestros], ['alumnos' => $alumnos], ['Alugrupos' => $alugrupos]);
     }
     /*public function Index()
     {

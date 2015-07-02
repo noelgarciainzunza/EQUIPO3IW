@@ -14,5 +14,7 @@
 
 Route::get('/', 'materiasController@Index');
 
-Route::get('grupos', 'gruposController@Index');
+Route::get('groups', 'gruposController@Index');
 Route::get('index', 'IndexController@Index');
+
+Route::get('grupos/{id}', ['as'=> 'grupos', 'uses' => 'materiasController@allmaterias']);
