@@ -27,7 +27,7 @@
             <br>
             <br>
         
-                     <div class="list-group">
+                     <div class="list-group sombra3">
             <a align="center" href="/EQUIPO3IW/public/" class="list-group-item active"><b>INICIO</b></a>
                 @foreach ($materias as $materia)
              <a align="center" href="{{route('gruposs',[$materia->id])}}" class="list-group-item"><b>{{ $materia->nombre }}</b></a>
@@ -41,10 +41,12 @@
 
         <div class="container" >
     <div class="row">
-        <nav class="col-xs-8" style= "background-color: #99ccff">
-            <h1 align="center"><b style="text-decoration: underline">GRUPOS DISPONIBLES</b></h1>
-            <br><h2 align="center">@yield('welcome','Bienvenidos al Sistema Gestor de Grupos del ITC')</h2>
-            @yield('img','<p align="center"><img  src="broncos.png" width="30%" alt=""></p>')
+
+        <nav class="col-xs-8">
+            <h1 align="center" class="sombra1"><b style="text-decoration: underline">GRUPOS DISPONIBLES</b></h1>
+            <br><h2 align="center" class="sombra2">@yield('welcome','Bienvenidos al Sistema Gestor de Grupos del ITC')</h2>
+            @yield('img','<p align="center"><img  src="broncos.png" class="img-thumbnail" width="30%" alt=""></p>')
+
            @yield('grupos') 
         </nav>   
         </div> 
