@@ -40,7 +40,7 @@
     <div class="row">
         <nav class="col-xs-8">
             <h1 align="center"><b style="text-decoration: underline">GRUPOS DISPONIBLES</b></h1>
-       
+            <br><h2 align="center">@yield('welcome','Bienvenidos al Sistema Gestor de Grupos del ITC')</h2>
            @yield('grupos') 
         </nav>   
         </div> 
@@ -50,7 +50,7 @@
         <div class="row"></div>
             <div class="col-xs-14"style="background: rgba(0,0,1,0.5);"  >
         <hr>
-        <center><h4><font color="white">COPY&RIGTH &COPY; EQUIPO 3 - IW</font></h4>
+        <center><h4><font color="white">COPY&RIGTH &COPY; EQUIPO 3 - Verano de Ingenieria Web</font></h4>
     </div>  
 </footer class="container">
 </body>
