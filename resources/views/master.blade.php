@@ -25,13 +25,13 @@
             <br>
         
                      <div class="list-group">
-
+            <a align="center" href="/EQUIPO3IW/public/" class="list-group-item active"><b>INICIO</b></a>
                 @foreach ($materias as $materia)
              <a align="center" href="{{route('gruposs',[$materia->id])}}" class="list-group-item"><b>{{ $materia->nombre }}</b></a>
                 @endforeach
-                </div>
-            
+            <a align="center" class="list-group-item active"><b>Instituto Tecnologico de Culiacan &COPY;</b></a>
 
+                </div>
 
         </nav>
 
