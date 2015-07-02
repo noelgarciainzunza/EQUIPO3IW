@@ -6,9 +6,9 @@ Grupos por Materia
 @section('welcome')
 <h3>"Puedes visualizar la lista del grupo con formato pdf en cada enlace."</h3>
 @endsection
-Grupos por Materia
-@endsection
+@section('img')
 
+@endsection
 @section('grupos')
 @foreach ($grupos as $grupo)
 <hr>

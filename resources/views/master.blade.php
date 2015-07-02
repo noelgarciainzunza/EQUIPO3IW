@@ -41,6 +41,7 @@
         <nav class="col-xs-8">
             <h1 align="center"><b style="text-decoration: underline">GRUPOS DISPONIBLES</b></h1>
             <br><h2 align="center">@yield('welcome','Bienvenidos al Sistema Gestor de Grupos del ITC')</h2>
+            @yield('img','<p align="center"><img  src="broncos.png" width="30%" alt=""></p>')
            @yield('grupos') 
         </nav>   
         </div> 
