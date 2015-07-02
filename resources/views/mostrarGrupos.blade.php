@@ -12,6 +12,7 @@ Grupos por Materia
 @section('grupos')
 @foreach ($grupos as $grupo)
 <hr>
+
 <table align="center">
 	<tr>
 		<td><a href="{{ route('pdf',[$grupo->id, $grupo->maestro, $grupo->aula])}}"><h2 align="center">Grupo{{$grupo->id}}</h2></a></td>
@@ -25,7 +26,11 @@ Grupos por Materia
 	<tr>
 		<td><b>Materia:{{$grupo->materia}}</b></td>
 	</tr>
-	</table>
-	<hr>
+	</table> 
+	
+	<br>
 	@endforeach
 @endsection
+ 
+
+
