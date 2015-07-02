@@ -13,7 +13,7 @@ class Maestros extends Model
 
     public function gruposs()
     {
-        return  $this->hasMany('Grupos', 'id_maestro', 'id');
+        return  $this->hasOne('Grupos');
     }
 
 }
